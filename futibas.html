@@ -1,0 +1,40 @@
+
+
+<script>
+    
+
+function skipLinha(){ 
+    
+    document.write("<br>");
+    document.write("<br>");           
+
+}
+
+function show(pedro){
+
+    document.write(pedro);
+    skipLinha();
+
+}
+let vit= parseInt(prompt("Fale o numero de vitorias"));
+
+let empt= parseInt(prompt("Fale o numero de empates"));
+
+let pont= vit*3+empt;
+
+show("Os pontos de seu time são "+ pont);
+
+
+if(pont>28){
+    show("Seu Time Melhorou");
+}
+
+if(pont<28){
+    show("Seu Time Piorou");
+}
+if (pont==28){
+    show("Seu Time Esta Na Mesma");
+}
+
+
+</script>
