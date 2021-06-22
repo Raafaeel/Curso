@@ -1,0 +1,17 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var picel= tela.getContext('2d');
+
+    picel.fillStyle= 'white';
+    picel.fillRect(0,0,600,400);
+
+    function alerIneitor(){
+
+        alert ('*click*');
+    }
+
+    tela.onclick=alerIneitor;
+
+</script>
